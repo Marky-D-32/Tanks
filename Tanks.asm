@@ -1,9 +1,9 @@
 
-				;*************************
-				;Your Computer - Listing 2
-				;*************************
+                ;*************************
+                ;Your Computer - Listing 2
+                ;*************************
                 ORG $2800
-				
+
 TankGraphic     FCB   $00,$01,$FF,$00,$01,$3F,$7F,$FF,$7A,$30,$06
 TankGraphic2    FCB   $01,$3F,$FF,$FF,$FF,$FF,$FF,$FF,$EB,$40,$66
                 FCB   $C0,$E0,$FE,$FE,$F0,$FF,$FF,$FF,$AE,$06,$64
@@ -82,44 +82,44 @@ NumLives        FCB   $37
 GapStartPos     FCB   $09,$03
 GapRowCnt       FCB   $99
 TankPos_temp    FCB   $41,$2C
-MoveTankCnt     FCB   $31               		;Number of rows to move tank
+MoveTankCnt     FCB   $31                       ;Number of rows to move tank
 GameLevel       FCB   $31
 TankPos         FCB   $32,$35
 TankGrpPtr      FCB   $20,$00
 
 ShellColCnt     FCB   $29
-ShellAtvFlag    FCB   $DB               		;0 Active; 1 InActive
-ShellPos        FCB   $2E,$0E           		;Position of tank shell on screen
-                FCB   $86,$20           		;Not used
+ShellAtvFlag    FCB   $DB                       ;0 Active; 1 InActive
+ShellPos        FCB   $2E,$0E                   ;Position of tank shell on screen
+                FCB   $86,$20                   ;Not used
 DelayCnt        FCB   $32,$36
 ShellDir        FCB   $46
-                
-				FCB   $36,$33,$31       		;Not used
-				
+
+                FCB   $36,$33,$31               ;Not used
+
 ShellScrollCnt  FCB   $33
 ShellRotateCnt  FCB   $35
-                
-				FCB   $33,$30,$31,$45,$38,$43   ;Not used
-				
-TempXReg        FCB   $30,$38           		;Temporary storage
-TempYReg        FCB   $2C,$36           		;Temporary storage
-                
-				FCB   $31,$32,$20,$00      		;Not used
 
-BombDelay       FCB   $29,$F8           		;Bomb Delay - Controls when bomb will appear
+                FCB   $33,$30,$31,$45,$38,$43   ;Not used
+
+TempXReg        FCB   $30,$38                   ;Temporary storage
+TempYReg        FCB   $2C,$36                   ;Temporary storage
+
+                FCB   $31,$32,$20,$00           ;Not used
+
+BombDelay       FCB   $29,$F8                   ;Bomb Delay - Controls when bomb will appear
 BombFlag        FCB   $2E
-BombPosInit     FCB   $08,$BD 
+BombPosInit     FCB   $08,$BD
 BombMoveCnt     FCB   $20
 BombPos         FCB   $42,$43
 
 ShellFiredFlag  FCB   $32
 
-                FCB   $46                 		;Not used
+                FCB   $46                       ;Not used
 
-HyperSpaceFlag  FCB   $31               		;Indiciates if tank is in hyperspace
-HyperSpaceCntDn FCB   $00,$32           		;Countdown to when hyperspace finishes
+HyperSpaceFlag  FCB   $31                       ;Indiciates if tank is in hyperspace
+HyperSpaceCntDn FCB   $00,$32                   ;Countdown to when hyperspace finishes
 
-                FCB   $36,$32,$39,$42,$39,$35,$41	;Not used
+                FCB   $36,$32,$39,$42,$39,$35,$41   ;Not used
 
                 ;*************************
                 ;Your Computer - Listing 3
@@ -127,9 +127,9 @@ HyperSpaceCntDn FCB   $00,$32           		;Countdown to when hyperspace finishes
                 ORG  $29EF
 
 TankHitGrp      FCB   $18,$18,$FF,$FF,$18,$18,$18,$18,$18,$7E,$FF
-EnemyTankGph    FCB   $10,$38,$6C,$C7,$6C,$38,$10 
+EnemyTankGph    FCB   $10,$38,$6C,$C7,$6C,$38,$10
 
-                FCB $92,$54,$38,$FE,$38,$54,$92		;Not used
+                FCB $92,$54,$38,$FE,$38,$54,$92     ;Not used
 
 EnemySpiderGph  FCB   $C6,$29,$54,$DE,$54,$29,$C6
 
@@ -144,7 +144,7 @@ TankDispArray   FCB   $80,$80
                 FCB   $30,$42
                 FCB   $36,$31
 NumEnemyTanks   FCB   $36
-EnemyArrPtr     FCB   $46,$46           		;Enemy count Array
+EnemyArrPtr     FCB   $46,$46                   ;Enemy count Array
 EnemyPos        FCB   $35,$39
 EnemyGrpCopy    FCB   $2C,$36,$30,$33,$20,$00,$2A
 EnemyDirection  FCB   $4D
@@ -153,27 +153,27 @@ EnemyShlAtvFlag FCB   $2E
 EnemyTankPosTMP FCB   $86,$20
 EnemyShellPos   FCB   $43,$36
 EnemyFireCntDn  FCB   $30
-                
-				FCB $32,$46         				;Not used
-NotUsed1        FCB $37,$32         				;Not used (although referenced)
+
+                FCB $32,$46                         ;Not used
+NotUsed1        FCB $37,$32                         ;Not used (although referenced)
 
 EnemyShlRotCnt  FCB $39
 
                 ;*************************
-                ;Your Computer - Listing 4 
+                ;Your Computer - Listing 4
                 ;*************************
                 ORG   $2A3F
-				
+
 NumEnemies      FCB   $08
 
 EnemyArrPtr2    FCB   $2A,$16
 TankHitFlag     FCB   $00
-                
-				FCB   $00,$00           			;Not Used
-EndGameFlag     FCB   $00          
-                FCB   $00           				;Not Used
-SlowDownTemp    FCB   $00           				
-                FCB   $00,$00       				;Not Used
+
+                FCB   $00,$00                       ;Not Used
+EndGameFlag     FCB   $00
+                FCB   $00                           ;Not Used
+SlowDownTemp    FCB   $00
+                FCB   $00,$00                       ;Not Used
 
 YourScoreTxt    FCB   $59,$4F,$55,$52,$8F,$8F
                 FCB   $53,$43,$4F,$52,$45,$8F,$8F,$8F,$8F,$8F
@@ -190,14 +190,14 @@ EnemyDirUp      EQU  $01
 EnemyDirDown    EQU  $00
 
                 ;**************************************
-                ;Your Computer - Listing 5 - game start 
+                ;Your Computer - Listing 5 - game start
                 ;**************************************
                 ORG $2B26
-				
+
 GameStart       LDA   #$07                          ;Set Number of lives
                 STA   NumLives
 
-                LDA   #$00                          
+                LDA   #$00
                 STA   GameLevel
                 LDY   #$0514                        ;Set Delay \ slowdown amount
                 STY   DelayCnt
@@ -498,7 +498,7 @@ WriteNumLives   LDA   NumLives
 
                 ;Draw scrolling barrier on left
                 LDX   #$0903
-                LDA   #$80                     
+                LDA   #$80
                 LDB   #$A7
 DGrid_1         STA   ,X
                 LEAX  32,X
@@ -513,7 +513,7 @@ DGrid_1         STA   ,X
                 LDX   #$1B1C                    ;Tank Start position
                 LDY   #TankGraphic2
 
-MainLoop        LDB   #$17						;Reset control values
+MainLoop        LDB   #$17                      ;Reset control values
                 STB   ShellColCnt
                 LDB   #$18
                 STB   ShellScrollCnt
@@ -537,10 +537,10 @@ MainLoop_1      LBSR  ScrollGap
                 LBSR  SlowDown
 
                 LDA   $0153
-                CMPA  #$EF						;Has 'Q' been pressed?
+                CMPA  #$EF                      ;Has 'Q' been pressed?
                 BEQ   MoveTankUp                ;Yes - Move tank  up
                 LDA   $0153
-                CMPA  #$FB						;Has 'A' been pressed?
+                CMPA  #$FB                      ;Has 'A' been pressed?
                 BEQ   MoveTankDn                ;Yes - Move tank down
 
 EndLoop         BRA   MainLoop
@@ -582,17 +582,17 @@ MTU_3           LEAX  -32,X
                 DECB
                 BNE   MTU_3
 
-                LEAY  -11,Y						;Reset tank pointers
+                LEAY  -11,Y                     ;Reset tank pointers
                 LEAX  -2,X
-                CMPX  #$08BC					;Have we reached top of playing area?
-                BLE   MoveTankDn				;Yes - move tank back down
+                CMPX  #$08BC                    ;Have we reached top of playing area?
+                BLE   MoveTankDn                ;Yes - move tank back down
                 LDB   MoveTankCnt
                 DECB
                 STB   MoveTankCnt
-                BNE   MTU_repeat				;Need to move tank once more
-                LDB   ShellAtvFlag				
-                CMPB  #$00						;Is there an active tank sheel?
-                LBEQ  FireLoop					;Yes
+                BNE   MTU_repeat                ;Need to move tank once more
+                LDB   ShellAtvFlag
+                CMPB  #$00                      ;Is there an active tank sheel?
+                LBEQ  FireLoop                  ;Yes
 
                 LBRA  MainLoop
 
@@ -630,18 +630,18 @@ MTD_3           LEAX  32,X
                 DECB
                 BNE   MTD_3
 
-                LEAY  -22,Y						;reset tank pointers
+                LEAY  -22,Y                     ;reset tank pointers
                 LEAX  $FEBE,X
-                CMPX  #$1CBC					;Have we reached bottom of playing area?
-                LBGE  MoveTankUp				;Yes - move tank back up
+                CMPX  #$1CBC                    ;Have we reached bottom of playing area?
+                LBGE  MoveTankUp                ;Yes - move tank back up
                 LDB   MoveTankCnt
                 DECB
                 STB   MoveTankCnt
                 CMPB  #$00
-                BNE   MTD_repeat				;need to move tank once more
+                BNE   MTD_repeat                ;need to move tank once more
                 LDB   ShellAtvFlag
-                CMPB  #$00						;Is there an active tank shell?
-                LBEQ  FireLoop					;Yes
+                CMPB  #$00                      ;Is there an active tank shell?
+                LBEQ  FireLoop                  ;Yes
 
                 LBRA  MainLoop
 
@@ -649,18 +649,18 @@ MTD_3           LEAX  32,X
 ScrollGap       STX   TankPos_temp
                 LDX   GapStartPos
                 LDB   GapRowCnt
-                LDA   #$80						;10000000 i.e. wall
-                STA   ,X						;Draw it (i.e. overdraw gap)
-                LEAX  32,X						;move down 1 row
+                LDA   #$80                      ;10000000 i.e. wall
+                STA   ,X                        ;Draw it (i.e. overdraw gap)
+                LEAX  32,X                      ;move down 1 row
                 STX   GapStartPos
                 LEAX  $0100,X                   ;Height of gap (32 rows)
-                LDA   #$00						
-                STA   ,X						;draw gap
+                LDA   #$00
+                STA   ,X                        ;draw gap
                 DECB
-                STB   GapRowCnt					;Save count
-                CMPB  #$00						;reached bottom of wall area?
-                BEQ   ResetScrollGap			;Yes
-SG_Exit         LDX   TankPos_temp				;No
+                STB   GapRowCnt                 ;Save count
+                CMPB  #$00                      ;reached bottom of wall area?
+                BEQ   ResetScrollGap            ;Yes
+SG_Exit         LDX   TankPos_temp              ;No
                 RTS
 
                 ;Slow things down
@@ -672,7 +672,7 @@ SD_1            LEAY  -1,Y
                 PULS  Y
                 RTS
 
-				;reset wall\gap values
+                ;reset wall\gap values
 ResetScrollGap  LDX   #$0903
                 STX   GapStartPos
                 LDB   #$99
@@ -682,10 +682,10 @@ ResetScrollGap  LDX   #$0903
                 ;************
                 ;Fire Pressed
                 ;************
-FireCtrl        LDB   #$00						;set shell inflight values
+FireCtrl        LDB   #$00                      ;set shell inflight values
                 STB   ShellAtvFlag
                 STB   ShellFiredFlag
-                BSR   DrawInitShell				;Draw it
+                BSR   DrawInitShell             ;Draw it
 
 FireLoop        LDB   ShellAtvFlag
                 CMPB  #$01                      ;Shell inflight?
@@ -696,20 +696,20 @@ FireLoop_1      BSR   ScrollGap
                 JMP   BombCtrl
 
 FireLoop_2      BSR   SlowDown
-                
-				;Check for key presses
-				LBSR  $8006
-                CMPA  #$0D						;Has enter been pressed
-                LBEQ  HyperSpace				;Yes
+
+                ;Check for key presses
+                LBSR  $8006
+                CMPA  #$0D                      ;Has enter been pressed
+                LBEQ  HyperSpace                ;Yes
                 LDA   $0153
-                CMPA  #$EF						;Has 'Q' been pressed?
-                LBEQ   MoveTankUp				;Yes
-                LDA   $0153			
-                CMPA  #$FB						;Has 'A' been pressed?
-                LBEQ  MoveTankDn				;Yes
+                CMPA  #$EF                      ;Has 'Q' been pressed?
+                LBEQ   MoveTankUp               ;Yes
+                LDA   $0153
+                CMPA  #$FB                      ;Has 'A' been pressed?
+                LBEQ  MoveTankDn                ;Yes
                 BRA   FireLoop
 
-				;Draw the tank shell
+                ;Draw the tank shell
 DrawInitShell   STX   TankPos
                 STY   TankGrpPtr
                 LEAX  63,X                      ;Calc location of cannon shell
@@ -754,7 +754,7 @@ SSL_1           ROL   ,Y
 BounceShell     LBSR  ShellBncSnd
                 LDX   ShellPos
 
-				;Scroll the shell right
+                ;Scroll the shell right
 ScrShellRight   LDB   ShellScrollCnt
                 LDA   #$08                      ;Scroll shell 8 times
                 STA   ShellRotateCnt
@@ -772,22 +772,22 @@ SSR_1           ROR   ,Y
                 LDA   ShellRotateCnt
                 DECA
                 STA   ShellRotateCnt
-                CMPA  #$00						;Finished scrolling shell?
-                BNE   SSR_1						;No
-                LEAX  1,X						;Yes - move it into next byte
+                CMPA  #$00                      ;Finished scrolling shell?
+                BNE   SSR_1                     ;No
+                LEAX  1,X                       ;Yes - move it into next byte
                 STX   ShellPos
                 DECB
-                STB   ShellScrollCnt			
-                CMPB  #$00						;Has shell movement finished?
-                BEQ   SSR_exit					;Yes
-                LDX   TankPos					;No
+                STB   ShellScrollCnt
+                CMPB  #$00                      ;Has shell movement finished?
+                BEQ   SSR_exit                  ;Yes
+                LDX   TankPos                   ;No
                 LDY   TankGrpPtr
-                LDB   HyperSpaceFlag			
-                CMPB  #$00						;Is hyperspace active?
-                LBNE  HyperSpaceCtrl			;Yes
-                LBRA  FireLoop_1				;No
+                LDB   HyperSpaceFlag
+                CMPB  #$00                      ;Is hyperspace active?
+                LBNE  HyperSpaceCtrl            ;Yes
+                LBRA  FireLoop_1                ;No
 
-SSR_exit        LDA   #$00						;Erase shell graphic
+SSR_exit        LDA   #$00                      ;Erase shell graphic
                 STA   ShellDir
                 STA   ,X
                 LEAX  -1,X
@@ -799,9 +799,9 @@ SSR_exit        LDA   #$00						;Erase shell graphic
                 ;*****************
                 ;Tank has been hit
                 ;*****************
-				;Erase shell graphic
+                ;Erase shell graphic
 ShellHitTank    LDX   ShellPos
-                LDA   #$00              
+                LDA   #$00
                 STA   ,X
                 LEAX  -1,X
                 STA   ,X
@@ -844,14 +844,14 @@ SHTDT_1         LDA   ,Y+
                 BNE   SHTDT_1
 
                 LDA   NumLives
-                CMPA  #$00						;Have all lives been used up?
-                BEQ   SHT_NoMoreLives			;Yes
-                LBSR  ShellHitTnkSnd			;Make sound
-                LBRA  ResetGame					;Reset the game and start level again
+                CMPA  #$00                      ;Have all lives been used up?
+                BEQ   SHT_NoMoreLives           ;Yes
+                LBSR  ShellHitTnkSnd            ;Make sound
+                LBRA  ResetGame                 ;Reset the game and start level again
 
 SHT_NoMoreLives LDB   #$08
                 STB   NumEnemies
-                JMP   EndGame					;End the game
+                JMP   EndGame                   ;End the game
 
                 NOP
                 NOP
@@ -905,9 +905,9 @@ SHT_NoMoreLives LDB   #$08
                 NOP
                 NOP
 
-				;********************
-				;Bomb control routine
-				;********************
+                ;********************
+                ;Bomb control routine
+                ;********************
 BombCtrl        STX   TankPos
                 STY   TankGrpPtr
 
@@ -918,14 +918,14 @@ BombCtrl        STX   TankPos
                 LEAY  -1,Y
                 STY   BombDelay
                 CMPY  #$0000
-                BNE   BombCtrl_Exit				;Not ready to drop bomb
+                BNE   BombCtrl_Exit             ;Not ready to drop bomb
 
                 ;Initiate Bomb
-                LDB   #$01						;Set bomb active marker
+                LDB   #$01                      ;Set bomb active marker
                 STB   BombFlag
-                LDX   BombPosInit				;Set its onscreen position
+                LDX   BombPosInit               ;Set its onscreen position
                 STX   BombPos
-                LDY   #BombGraphic				;Draw bomb
+                LDY   #BombGraphic              ;Draw bomb
                 LDB   #$0A
 BombInit_1      LDA   ,Y+
                 STA   ,X
@@ -934,14 +934,14 @@ BombInit_1      LDA   ,Y+
                 BNE   BombInit_1
 
                 ;Move Bomb down screen
-BombMove        LDB   #$04						;Move it 4 times
+BombMove        LDB   #$04                      ;Move it 4 times
                 STB   BombMoveCnt
 BombMove_2      LDX   BombPos
-                LDA   #$00						;Erase top line
+                LDA   #$00                      ;Erase top line
                 STA   ,X
                 LEAX  32,X
                 STX   BombPos
-                LDB   #$0A						;Draw bomb
+                LDB   #$0A                      ;Draw bomb
                 LDY   #BombGraphic
 BombMove_1      LDA   ,Y+
                 STA   ,X
@@ -958,7 +958,7 @@ BombMove_1      LDA   ,Y+
                 ;Has bomb reached bottom of screen?
                 CMPX  #$1C9D
                 BGE   BombReset                 ;Yes - reset
-                LDB   BombMoveCnt				;No
+                LDB   BombMoveCnt               ;No
                 DECB
                 STB   BombMoveCnt
                 CMPB  #$00
@@ -969,34 +969,34 @@ BombCtrl_Exit   LDX   TankPos
                 LDB   HyperSpaceFlag
                 CMPB  #$02
                 LBEQ  HyperSpaceCtrl
-                LDB   ShellFiredFlag			
-                CMPB  #$00						;Is there a tank shell inflight?
-                LBEQ  FireLoop_2				;yes
-                LBRA  MainLoop_1				;No
+                LDB   ShellFiredFlag
+                CMPB  #$00                      ;Is there a tank shell inflight?
+                LBEQ  FireLoop_2                ;yes
+                LBRA  MainLoop_1                ;No
 
                 ;Bomb reached bottom of screen - reset it
-BombReset       LDX   BombPos					;Erase bomb
+BombReset       LDX   BombPos                   ;Erase bomb
                 LDB   #$0A
                 LDA   #$00
 BombReset_1     STA   ,X
                 LEAX  32,X
                 DECB
                 BNE   BombReset_1
-                LDB   #$00						;Reset bomb ctrl values
+                LDB   #$00                      ;Reset bomb ctrl values
                 STB   BombFlag
                 LDY   #$03E8
                 STY   BombDelay
-                BRA   BombCtrl_Exit				;Exit
+                BRA   BombCtrl_Exit             ;Exit
 
                 ;Bomb has hit Tank
 BombHitTank     LDX   BombPos
                 LDB   #$0A
-                LDA   #$00						;Erase bomb
+                LDA   #$00                      ;Erase bomb
 BombHitTank_2   STA   ,X
                 LEAX  32,X
                 DECB
                 BNE   BombHitTank_2
-                LDB   #$00						;Reset bomb ctrl values
+                LDB   #$00                      ;Reset bomb ctrl values
                 STB   BombFlag
                 LDY   #$03E8
                 STY   BombDelay
@@ -1050,12 +1050,12 @@ HyperSpaceCtrl  LBSR  SlowDown
                 LDY   HyperSpaceCntDn
                 LEAY  -1,Y
                 STY   HyperSpaceCntDn
-                CMPY  #$0000					;Hyperspace finsihed?
-                BEQ   HypeSpaceFin				;Yes
-                BRA   HypeSpace_exit			;No
+                CMPY  #$0000                    ;Hyperspace finsihed?
+                BEQ   HypeSpaceFin              ;Yes
+                BRA   HypeSpace_exit            ;No
 
                 ;Hyperspace finished
-HypeSpaceFin    LDY   #$0032					;Reset hyperspace ctrl values
+HypeSpaceFin    LDY   #$0032                    ;Reset hyperspace ctrl values
                 STY   HyperSpaceCntDn
 
                 ;Redraw Tank
@@ -1129,60 +1129,60 @@ SHT_2           STA   ,X
                 ;Write new score to screen
                 LDA   Score_Dig4
                 INCA
-                CMPA  #$09						;Is digit 4 above 9?
-                BGT   SHT_3						;Yes - increase next sig bit
-                STA   Score_Dig4				;No - save and draw
+                CMPA  #$09                      ;Is digit 4 above 9?
+                BGT   SHT_3                     ;Yes - increase next sig bit
+                STA   Score_Dig4                ;No - save and draw
                 LDY   #$0764
                 LDA   Score_Dig4
                 LBSR  DrawNums
-                LBRA  SHT_6a					;finished
+                LBRA  SHT_6a                    ;finished
 
-SHT_3           LDA   #$00						;Set digit 4 to zero
-                STA   Score_Dig4				;Save and draw
+SHT_3           LDA   #$00                      ;Set digit 4 to zero
+                STA   Score_Dig4                ;Save and draw
                 LDY   #$0764
                 LDA   Score_Dig4
                 LBSR  DrawNums
-                LDA   Score_Dig3				;increase next sig bit
+                LDA   Score_Dig3                ;increase next sig bit
                 INCA
-                CMPA  #$09						;is digit 3 above 9?
-                BGT   SHT_4						;Yes - increase next sig bit
-                STA   Score_Dig3				;No - save and draw
+                CMPA  #$09                      ;is digit 3 above 9?
+                BGT   SHT_4                     ;Yes - increase next sig bit
+                STA   Score_Dig3                ;No - save and draw
                 LDY   #$0763
                 LDA   Score_Dig3
                 LBSR  DrawNums
-                LBRA  SHT_6a					;Finished
+                LBRA  SHT_6a                    ;Finished
 
-SHT_4           LDA   #$00						;Set digit 3 to zero
-                STA   Score_Dig3				;Save and draw
+SHT_4           LDA   #$00                      ;Set digit 3 to zero
+                STA   Score_Dig3                ;Save and draw
                 LDY   #$0763
                 LDA   Score_Dig3
                 LBSR  DrawNums
-                LDA   Score_Dig2				;increase next sig bit
+                LDA   Score_Dig2                ;increase next sig bit
                 INCA
-                CMPA  #$09						;is digit 2 above 9?
-                BGT   SHT_5						;Yes - increase next sig bit
-                STA   Score_Dig2				;No - save and draw
+                CMPA  #$09                      ;is digit 2 above 9?
+                BGT   SHT_5                     ;Yes - increase next sig bit
+                STA   Score_Dig2                ;No - save and draw
                 LDY   #$0762
                 LDA   Score_Dig2
                 LBSR  DrawNums
-                LBRA  SHT_6a					;Finished
+                LBRA  SHT_6a                    ;Finished
 
-SHT_5           LDA   #$00						;Set digit 2 to zero
-                STA   Score_Dig2				;Save and draw
+SHT_5           LDA   #$00                      ;Set digit 2 to zero
+                STA   Score_Dig2                ;Save and draw
                 LDY   #$0762
                 LDA   Score_Dig2
                 LBSR  DrawNums
-                LDA   Score_Dig1				;increase next sig bit
+                LDA   Score_Dig1                ;increase next sig bit
                 INCA
-                CMPA  #$09						;is digit 1 above 9
-                BGT   SHT_6						;Yes - reset scores
-                LDY   #$0761					;Save and draw
+                CMPA  #$09                      ;is digit 1 above 9
+                BGT   SHT_6                     ;Yes - reset scores
+                LDY   #$0761                    ;Save and draw
                 LDA   Score_Dig1
                 LBSR  DrawNums
                 LBRA  SHT_6a
 
-SHT_6           LDA   #$00						;Set all digits to zero
-                STA   Score_Dig1				;Save and draw
+SHT_6           LDA   #$00                      ;Set all digits to zero
+                STA   Score_Dig1                ;Save and draw
                 LDY   #$0761
                 LDA   Score_Dig1
                 LBSR  DrawNums
@@ -1222,7 +1222,7 @@ SHT_8           LDA   ,X
                 INCA
 
                 CMPA  #$09                      ;Is digit 3 now above 9?
-                BGT   SHT_9                     ;Yes - 
+                BGT   SHT_9                     ;Yes -
                 STA   Score_Dig3                ;No - save and Draw
                 LDY   #$0763
                 LBSR  DrawNums
@@ -1237,31 +1237,31 @@ SHT_9           CMPA  #$0A                      ;Is digit 3 = 10?
                 LDA   Score_Dig2
                 INCA                            ;Need to increase next sig byte
                 CMPA  #$09                      ;Is digit 2 now above 9?
-                BGT   SHT_10					;Yes
-                LDY   #$0762					;No - draw it
-                
-				;Incorrect in listing - removed
-				;FCB   $87
+                BGT   SHT_10                    ;Yes
+                LDY   #$0762                    ;No - draw it
+
+                ;Incorrect in listing - removed
+                ;FCB   $87
                 ;FCB   $62
-                
-				LBSR  DrawNums
+
+                LBSR  DrawNums
                 BRA   Level1Finsihed
 
-SHT_10          LDA   #$00						;Set digit 3 to zero
-                STA   Score_Dig3				;Save and draw
+SHT_10          LDA   #$00                      ;Set digit 3 to zero
+                STA   Score_Dig3                ;Save and draw
                 LDY   #$0763
                 LBSR  DrawNums
-                LDA   Score_Dig2				;Need to increase next sig bit
+                LDA   Score_Dig2                ;Need to increase next sig bit
                 INCA
-                CMPA  #$09						;is digit 2 now above 9?
-                BGT   SHT_11					;Yes
-                STA   Score_Dig2				;No - save and draw
+                CMPA  #$09                      ;is digit 2 now above 9?
+                BGT   SHT_11                    ;Yes
+                STA   Score_Dig2                ;No - save and draw
                 LDY   #$0762
                 LBSR  DrawNums
                 BRA   Level1Finsihed
 
-SHT_11          LDA   #$00						;Set all digits to zero
-                STA   Score_Dig1				;Save and draw
+SHT_11          LDA   #$00                      ;Set all digits to zero
+                STA   Score_Dig1                ;Save and draw
                 LDY   #$0761
                 LBSR  DrawNums
                 STA   Score_Dig2
@@ -1408,43 +1408,43 @@ PlayGame2       LDX   #TankDispArray
                 BEQ   Game2Level02
                 LBRA  Game2Level03
 
-				;Draw enemy type 1 - indicates how many enemies left in play
-Game2Level01    LDY   #TankDispArray            ;Array of Location of enemy tanks on screen 
-                STY   EnemyArrPtr				;Store 1st array location to pointer
+                ;Draw enemy type 1 - indicates how many enemies left in play
+Game2Level01    LDY   #TankDispArray            ;Array of Location of enemy tanks on screen
+                STY   EnemyArrPtr               ;Store 1st array location to pointer
                 LDX   #$09E2
                 STX   ,Y                        ;Save position of 1st tank to 1st array position
-                LDB   #$08						;Number of tanks to draw
+                LDB   #$08                      ;Number of tanks to draw
                 STB   NumEnemyTanks
 G2L1_2          LDX   [EnemyArrPtr]             ;Get position to draw tank from array
-                LDY   #EnemyTankGph				;Draw
-                LDB   #$07						
+                LDY   #EnemyTankGph             ;Draw
+                LDB   #$07
 G2L1_1          LDA   ,Y+
                 STA   ,X
                 LEAX  32,X
                 DECB
-                BNE   G2L1_1					;Not finished drawing
+                BNE   G2L1_1                    ;Not finished drawing
                 LDB   NumEnemyTanks
                 DECB
                 STB   NumEnemyTanks
-                CMPB  #$00						;Finished drawing all enemy indicators?
-                BNE   G2L1_3					;No
-                LBRA  PlayLevel2				;Yes - go play
+                CMPB  #$00                      ;Finished drawing all enemy indicators?
+                BNE   G2L1_3                    ;No
+                LBRA  PlayLevel2                ;Yes - go play
 G2L1_3          LEAX  $0140,X                   ;Calculate screen position of next tank
-                LDY   EnemyArrPtr				;Point to the next array psotion
+                LDY   EnemyArrPtr               ;Point to the next array psotion
                 LEAY  2,Y
-                STX   ,Y						;store the screen poistion
-                STY   EnemyArrPtr				;point to it
-                BRA   G2L1_2					;draw next enemy
+                STX   ,Y                        ;store the screen poistion
+                STY   EnemyArrPtr               ;point to it
+                BRA   G2L1_2                    ;draw next enemy
 
                 ;Draw enemy type 2 - indicates how many enemies left in play
-Game2Level02    LDY   #TankDispArray            
-                STY   EnemyArrPtr               
+Game2Level02    LDY   #TankDispArray
+                STY   EnemyArrPtr
                 LDX   #$09E2
                 STX   ,Y
                 LDB   #$08
                 STB   NumEnemyTanks
 G2L2_2          LDX   [EnemyArrPtr]
-                LDY   #EnemySpiderGph			;Enemy type 2 graphic
+                LDY   #EnemySpiderGph           ;Enemy type 2 graphic
                 LDB   #$07
 G2L2_1          LDA   ,Y+
                 STA   ,X
@@ -1464,7 +1464,7 @@ G2L2_3          LEAX  $0140,X
                 STY   EnemyArrPtr
                 BRA   G2L2_2
 
-				;Draw enemy type 3 - indicates how many enemies left in play
+                ;Draw enemy type 3 - indicates how many enemies left in play
 Game2Level03    LDY   #TankDispArray
                 STY   EnemyArrPtr
                 LDX   #$09E2
@@ -1472,7 +1472,7 @@ Game2Level03    LDY   #TankDispArray
                 LDB   #$08
                 STB   NumEnemyTanks
 G2L3_2          LDX   [EnemyArrPtr]
-                LDY   #EnemyVehGrp				;Enemy type 3 graphic
+                LDY   #EnemyVehGrp              ;Enemy type 3 graphic
                 LDB   #$07
 G2L3_1          LDA   ,Y+
                 STA   ,X
@@ -1518,7 +1518,7 @@ PL2_3           LDA   ,X+
 
                 ;Draw enemy in play
                 LDX   #$09E4
-                STX   EnemyPos   
+                STX   EnemyPos
                 LDY   #$09E2
                 LDB   #$07
 PL2_4           LDA   ,Y
@@ -1597,29 +1597,29 @@ MoveTankUpG2    LDB   #$02                      ;Move two times
                 STB   MoveTankCnt
 
                 ;Erase players tank
-MTUG2_1         LEAX  $0140,X					;Erase Bottom line of 1st third
+MTUG2_1         LEAX  $0140,X                   ;Erase Bottom line of 1st third
                 LDA   #$00
                 STA   ,X
-                LDB   #$0B						;Draw 1st third
+                LDB   #$0B                      ;Draw 1st third
 MTUG2_2         LEAX  -32,X
                 LDA   ,-Y
                 STA   ,X
                 DECB
                 BNE   MTUG2_2
-                LEAX  $0161,X					;Erase Bottom line of 2nd third
+                LEAX  $0161,X                   ;Erase Bottom line of 2nd third
                 LDA   #$00
                 STA   ,X
-                LDB   #$0B						;Draw 2nd third
+                LDB   #$0B                      ;Draw 2nd third
                 LEAY  22,Y
 MTUG2_3         LEAX  -32,X
                 LDA   ,-Y
                 STA   ,X
                 DECB
                 BNE   MTUG2_3
-                LEAX  $0161,X					;Erase Bottom line of 3rd third
+                LEAX  $0161,X                   ;Erase Bottom line of 3rd third
                 LDA   #$00
                 STA   ,X
-                LDB   #$0B						;Draw 3rd third
+                LDB   #$0B                      ;Draw 3rd third
                 LEAY  22,Y
 MTUG2_4         LEAX  -32,X
                 LDA   ,-Y
@@ -1629,42 +1629,42 @@ MTUG2_4         LEAX  -32,X
 
                 LEAY  -11,Y
                 LEAX  -2,X
-                CMPX  #$08BC					;Has tank reached top of playing area?
-                BLE   MoveTankDownG2			;Yes - move it back down
-                LDB   MoveTankCnt				;No
+                CMPX  #$08BC                    ;Has tank reached top of playing area?
+                BLE   MoveTankDownG2            ;Yes - move it back down
+                LDB   MoveTankCnt               ;No
                 DECB
                 STB   MoveTankCnt
-                BNE   MTUG2_1					;Need to move it again
+                BNE   MTUG2_1                   ;Need to move it again
                 LDB   ShellAtvFlag
-                CMPB  #$00						;Is a shell acive?
-                LBEQ  FireLoopG2				;Yes
-                LBRA  MainLoopL2				;No
+                CMPB  #$00                      ;Is a shell acive?
+                LBEQ  FireLoopG2                ;Yes
+                LBRA  MainLoopL2                ;No
 
                 ;Move Tank Down
 MoveTankDownG2  LDB   #$02
                 STB   MoveTankCnt
-MTDG2_1         LDA   #$00						;Erase top line of 1st third
+MTDG2_1         LDA   #$00                      ;Erase top line of 1st third
                 STA   ,X
-                LDB   #$0B						;draw 1st third
+                LDB   #$0B                      ;draw 1st third
                 LEAY  -11,Y
 MTDG2_2         LEAX  32,X
                 LDA   ,Y+
                 STA   ,X
                 DECB
                 BNE   MTDG2_2
-                LEAX  $FEA1,X					
-                LDA   #$00						;Erase top line of 2nd third
+                LEAX  $FEA1,X
+                LDA   #$00                      ;Erase top line of 2nd third
                 STA   ,X
-                LDB   #$0B						;draw 2nd third
+                LDB   #$0B                      ;draw 2nd third
 MTDG2_3         LEAX  32,X
                 LDA   ,Y+
                 STA   ,X
                 DECB
                 BNE   MTDG2_3
-                LEAX  $FEA1,X				
-                LDA   #$00						;Erase top ine of 3rd third
+                LEAX  $FEA1,X
+                LDA   #$00                      ;Erase top ine of 3rd third
                 STA   ,X
-                LDB   #$0B						;draw 3rd third
+                LDB   #$0B                      ;draw 3rd third
 MTDG2_4         LEAX  32,X
                 LDA   ,Y+
                 STA   ,X
@@ -1682,8 +1682,8 @@ MTDG2_4         LEAX  32,X
                 BNE   MTDG2_1                   ;No - move against
                 LDB   ShellAtvFlag
                 CMPB  #$00                      ;Is tank shell active?
-                LBEQ  FireLoopG2				;Yes
-                LBRA  MainLoopL2				;No
+                LBEQ  FireLoopG2                ;Yes
+                LBRA  MainLoopL2                ;No
 
                 ;Slow things down
 SlowDownG2      STY   SlowDownTemp
@@ -1719,11 +1719,11 @@ MoveEnemyG2     STX   TankPos
                 BNE   MoveEnemyUp
 
                 ;Enemy moving down
-MoveEnemyDown   LDB   #$07			
-                LDA   #$00						;Erase top line of enemy
+MoveEnemyDown   LDB   #$07
+                LDA   #$00                      ;Erase top line of enemy
                 STA   ,X
                 LEAX  32,X
-                STX   EnemyPos					;Draw enemy 
+                STX   EnemyPos                  ;Draw enemy
                 LDY   #EnemyGrpCopy
 MED_1           LDA   ,Y+
                 STA   ,X
@@ -1734,16 +1734,16 @@ MED_1           LDA   ,Y+
                 LDB   GapRowCnt
                 DECB
                 STB   GapRowCnt
-                CMPB  #$00						;Has enemy reached bottom?
-                BEQ   MED_2						;Yes - change direction
+                CMPB  #$00                      ;Has enemy reached bottom?
+                BEQ   MED_2                     ;Yes - change direction
                 LDX   TankPos
                 LDY   TankGrpPtr
                 RTS
 
                 ;Enemy hit bottom - start moving it up
-MED_2           LDB   #EnemyDirUp				;update direction flag
+MED_2           LDB   #EnemyDirUp               ;update direction flag
                 STB   EnemyDirection
-                LDB   #$8F						;Number of rows to move count
+                LDB   #$8F                      ;Number of rows to move count
                 STB   GapRowCnt
 
 MoveEnemyUp     LDX   EnemyPos
@@ -1758,11 +1758,11 @@ MoveEnemyUp     LDX   EnemyPos
                 CMPA  #$00
                 LBNE   PlayGame2_Reset
 
-                LDA   #$00						;Erase bottom line of enemy
+                LDA   #$00                      ;Erase bottom line of enemy
                 LEAX  $00E0,X
                 STA   ,X
                 LEAX  -32,X
-                LDY   #EnemyDirection			;draw enemy
+                LDY   #EnemyDirection           ;draw enemy
                 LDB   #$07
 MEU_1           LDA   ,-Y
                 STA   ,X
@@ -1774,16 +1774,16 @@ MEU_1           LDA   ,-Y
                 LDB   GapRowCnt
                 DECB
                 STB   GapRowCnt
-                CMPB  #$00						;Has enemy reached top?
-                BEQ   MEU_2						;Yes - change direction
+                CMPB  #$00                      ;Has enemy reached top?
+                BEQ   MEU_2                     ;Yes - change direction
                 LDX   TankPos
                 LDY   TankGrpPtr
                 RTS
 
                 ;Enemy hit top - start moving it down
-MEU_2           LDB   #$8F						;Number of rows to count
+MEU_2           LDB   #$8F                      ;Number of rows to count
                 STB   GapRowCnt
-                LDB   #EnemyDirDown				;update direction flag
+                LDB   #EnemyDirDown             ;update direction flag
                 STB   EnemyDirection
                 LDX   TankPos
                 LDY   TankGrpPtr
@@ -1926,7 +1926,7 @@ SHTG2_3         STA   ,X
                 STY   Score
                 LDA   Score_Dig4
                 INCA
-				CMPA  #$09
+                CMPA  #$09
                 BGT   SHTG2_4
                 STA   Score_Dig4
                 LDY   #$0764
@@ -2064,15 +2064,15 @@ RGC_4           LDA   #$00
 SetNextlevel    LDA   GameLevel
                 INCA
                 STA   GameLevel
-                CMPA  #$03						;Have we finished level 3
-                BGT   SNL_1						;Yes
-                LDX   #$1B1C					;No - play next level
+                CMPA  #$03                      ;Have we finished level 3
+                BGT   SNL_1                     ;Yes
+                LDX   #$1B1C                    ;No - play next level
                 LDY   #TankGraphic2
                 STX   TankPos
                 STY   TankGrpPtr
                 LBRA  PlayGame2_Reset
 
-				;Reset to level 1 and adjust game parameters
+                ;Reset to level 1 and adjust game parameters
 SNL_1           LDA   #$01
                 STA   GameLevel
                 LDY   DelayCnt
@@ -2157,9 +2157,9 @@ MES_2           LDB   #$16
                 LEAX  1,X
                 LDA   ,X
                 CMPA  #$00
-                BNE   MES_3						;Yes
+                BNE   MES_3                     ;Yes
 
-                LDA   #$00						;no - erase shell
+                LDA   #$00                      ;no - erase shell
                 LEAX  -1,X
                 STA   ,X
                 LDX   EnemyTankPosTMP
@@ -2325,4 +2325,3 @@ EG_7            LBSR  $8006
                 BNE   EG_7
                 LBRA  GameStart
                 RTS
-				
